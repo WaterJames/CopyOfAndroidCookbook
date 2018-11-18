@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:id="@+id/TableLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/txtLbl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/textLbl1"/>
+        <EditText
+            android:id="@+id/txtAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_column="2"
+            android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/txtLbl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/textLbl2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:onClick="decrement"/>
+        <EditText
+            android:id="@+id/txtPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_column="2"
+            android:layout_span="2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:onClick="increment"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/txtLbl3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textLbl3"/>
+    </TableRow>
+
+    <TableRow>
+    <RadioGroup
+        android:id="@+id/RadioGroupTips"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_span="3"
+        android:checkedButton="@+id/radioFifteen">
+        <RadioButton android:id="@+id/radioFifteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdoTxt15"
+            android:textSize="15sp"/>
+        <RadioButton android:id="@+id/radioTwenty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdoTxt20"
+            android:textSize="15sp"/>
+        <RadioButton android:id="@+id/radioOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdoTxtOther"
+            android:textSize="15sp"/>
+    </RadioGroup>
+        <EditText
+            android:id="@+id/txtTipOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="@string/btnReset"/>
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:text="@string/btnCalculate"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2px"
+        android:background="#DDFFDD"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"/>
+
+    <TableRow android:paddingBottom="10dip" android:paddingTop="5dip">
+        <TextView
+            android:id="@+id/txtLbl4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/textLbl4"/>
+        <TextView
+            android:id="@+id/txtTipAmout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow android:paddingBottom="10dip" android:paddingTop="5dip">
+        <TextView
+            android:id="@+id/txtLbl5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/textLbl5"/>
+        <TextView
+            android:id="@+id/txtTotalToPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow android:paddingBottom="10dip" android:paddingTop="5dip">
+        <TextView
+            android:id="@+id/txtLbl6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/textLbl6"/>
+        <TextView
+            android:id="@+id/txtTipPerPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_span="2"/>
+    </TableRow>
+
+</TableLayout>
